@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PassWord-Validatior</title>
+
+  <!-- ^=======> Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet" />
+  <!-- ^=======> Bootstrap Style Sheet -->
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+  <!-- Font Awesome Libirary -->
+  <link rel="stylesheet" href="./CSS/all.min.css" />
+  <!-- * =======> Main Style sheet -->
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <!-- website image -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./Images/bookmark.png" />
+</head>
+
+<body>
+  <h2 class="mx-auto pt-5 mt-5 display-5 ">Strog PassWord Validator </h2>
+  <div class="container d-flex justify-content-center align-items-center mt-5 pt-5">
+    <div class="card p-4 ">
+      <div class="pass-field">
+        <input class="form-control position-relative" type="password" placeholder="create password">
+        <i id="passowrdIcon" onclick="showPassword()" class="fa-solid fa-eye"></i>
+      </div>
+      <ul id="lista" class="pass-req list-unstyled requirement-list mt-4">
+        <p class="fw-bold text-info">PassWord Must Contains :</p>
+        <li>
+          <i class="fa-solid fa-circle"></i>
+          <span>At Least 8 Characters Length</span>
+        </li>
+        <li class="mt-2">
+          <i class="fa-solid fa-circle"></i>
+          <span>At Least 1 number (0...9)</span>
+        </li>
+        <li class="mt-2">
+          <i class="fa-solid fa-circle"></i>
+          <span>At Least 1 lowerCase (a...z)</span>
+        </li>
+        <li class="mt-2">
+          <i class="fa-solid fa-circle"></i>
+          <span>At Least 1 upperCase (A...Z)</span>
+        </li>
+        <li class="mt-2">
+          <i class="fa-solid fa-circle"></i>
+          <span>At Least 1 special symbol (!...$)</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+  <script src="./JS/index.js"></script>
+</body>
+
+</html>
